@@ -2,7 +2,8 @@
 
 ## Description
 
-This a place where you schedule your day and as the day progresses, the colours will change.
+This application is a daily-schedule for one day. The purpose is to be able to have the colours change accounding to what time it is and be able to enter in events. The events must be able to be saved. 
+
 
 ## User Story
 
