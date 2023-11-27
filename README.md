@@ -4,6 +4,7 @@
 
 This application is a daily-schedule for one day. The purpose is to be able to have the colours change accounding to what time it is and be able to enter in events. The events must be able to be saved. 
 
+
 ## User Story
 
 AS AN employee with a busy schedule
@@ -28,10 +29,7 @@ SO THAT I can manage my time effectively
 
 ## Picture
 
-
-
 ## Deployment
-
 
 ## Table of Contents
 
@@ -45,9 +43,7 @@ There is no installation needed as this is a web application.
 
 ## Usage
 
-The purpose of this application is to us APIs in order make it do what has been asked of me.
-
-In this site, I have utilized the knowledge I have learned through my studies. In this project: HTML, CSS and JavaScript.
+The purpose of this application is to show how I can use HTML, CSS, JS and etc. This is an application where you can put what you have going on for the day.
 
 ## Credits
 
