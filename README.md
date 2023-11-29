@@ -31,6 +31,8 @@ SO THAT I can manage my time effectively
 
 ## Deployment
 
+https://kzefram.github.io/Daily-Schedule/ 
+
 ## Table of Contents
 
 - [Installation](#installation)
