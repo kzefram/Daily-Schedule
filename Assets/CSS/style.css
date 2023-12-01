@@ -1,0 +1,89 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+  }
+  
+  textarea {
+    background: transparent;
+    border: none;
+    resize: none;
+    color: antiquewhite;
+    border-left: 1px solid black;
+    padding: 10px;
+  }
+  
+  .description {
+    white-space: pre-wrap;
+  }
+  
+  .time-block {
+    border-radius: 15px;
+  }
+  
+  .row {
+    border-top: 1px solid white;
+  }
+  
+  .hour {
+    background-color: #ffffff;
+    color: #000000;
+    border-top: 1px dashed #000000;
+  }
+  
+  .past {
+    background-color:  #999999;
+    color: white;
+  }
+  
+  .present {
+    background-color: #AF2413;
+    color: white;
+  }
+  
+  .future {
+    background-color: #2B6963;
+    color: white;
+  }
+  
+  .saveBtn {
+    border-left: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #4E7B96;
+    color: white;
+  }
+  
+  .saveBtn i:hover {
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  footer {
+    color: grey;
+    font-size: 12px;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 576px) {
+    .lead {
+      font-size: 85%;
+    }
+    .display-3 {
+      font-size: 85%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .lead {
+      font-size: 75%;
+    }
+    .display-3 {
+      font-size: 75%;
+    }
+    .hour {
+      font-size: 85%;
+      padding: 0;
+      margin: 0;
+  }
+}

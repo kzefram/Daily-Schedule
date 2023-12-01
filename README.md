@@ -2,6 +2,7 @@
 
 ## Description
 
+
 This application is a daily-schedule for one day. The purpose is to be able to have the colours change accounding to what time it is and be able to enter in events. The events must be able to be saved.
 
 ## User Story
@@ -27,6 +28,7 @@ SO THAT I can manage my time effectively
 - THEN the saved events persist
 
 ## Picture
+
 
 ![Picture of full page of Daily Schedule](image.png)
 
