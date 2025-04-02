@@ -1,89 +1,125 @@
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-  }
-  
-  textarea {
-    background: transparent;
-    border: none;
-    resize: none;
-    color: antiquewhite;
-    border-left: 1px solid black;
-    padding: 10px;
-  }
-  
-  .description {
-    white-space: pre-wrap;
-  }
-  
-  .time-block {
-    border-radius: 15px;
-  }
-  
-  .row {
-    border-top: 1px solid white;
-  }
-  
-  .hour {
-    background-color: #ffffff;
-    color: #000000;
-    border-top: 1px dashed #000000;
-  }
-  
-  .past {
-    background-color:  #999999;
-    color: white;
-  }
-  
-  .present {
-    background-color: #AF2413;
-    color: white;
-  }
-  
-  .future {
-    background-color: #2B6963;
-    color: white;
-  }
-  
-  .saveBtn {
-    border-left: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: #4E7B96;
-    color: white;
-  }
-  
-  .saveBtn i:hover {
-    font-size: 20px;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  footer {
-    color: grey;
-    font-size: 12px;
-    margin-top: 50px;
-    text-align: center;
-  }
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(149, 121, 160);
+            color: #4d4c4c;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+            color: antiquewhite;
+        }
+        header h1{
+            font-size: 2.5rem;
+        }
+        #currentDay {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        .time-block {
+            display: flex;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 0;
+        }
+        .hour {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+            color: rgb(170, 168, 168);
+            border-right: 1px solid #ddd;
+            padding: 10px;
+            font-weight: 600;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        .description {
+            flex: 6;
+            padding: 10px;
+            border: none;
+            border-radius: 0;
+            resize: none;
+            font-size: 1rem;
+        }
+        .saveBtn, .deleteBtn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #4caf4f80;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-left: 5px; /* Add some margin between the buttons */
+        }
+        .saveBtn i, .deleteBtn i {
+            font-size: 1.5rem;
+        }
+        .saveBtn:hover {
+            background-color: #45a049;
+        }
+        .deleteBtn {
+            background-color: #f15146; /* Red for delete */
+        }
+        .deleteBtn:hover {
+            background-color: #d32f2f; /* Darker red on hover */
+        }
 
-  @media screen and (max-width: 576px) {
-    .lead {
-      font-size: 85%;
-    }
-    .display-3 {
-      font-size: 85%;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .lead {
-      font-size: 75%;
-    }
-    .display-3 {
-      font-size: 75%;
-    }
-    .hour {
-      font-size: 85%;
-      padding: 0;
-      margin: 0;
-  }
-}
+        .past {
+            background-color: #d3d3d3;
+            color: #888;
+        }
+        .present {
+            background-color: #ffeb3b;
+            color: #333;
+        }
+        .future {
+            background-color: #e0f7fa;
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: antiquewhite;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            .time-block {
+                flex-direction: column;
+            }
+            .hour {
+                border-bottom: 1px solid #ddd;
+                border-right: none;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-bottom-left-radius: 0;
+            }
+            .description {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            .saveBtn, .deleteBtn {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 0;
+                margin-left: 0; /* Remove left margin on small screens */
+            }
+        }
